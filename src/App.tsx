@@ -1,5 +1,5 @@
 // src/App.tsx
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link, Navigate } from 'react-router-dom';
 import { AppBar, Toolbar, Typography, Button } from '@mui/material';
 import Home from './pages/Home';
@@ -27,7 +27,7 @@ function App() {
   };
 
   return (
-    <Router>
+    <Router basename='/foodApp'>
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h3" component="div" sx={{ flexGrow: 1 }}>
